@@ -1,0 +1,12 @@
+.Navbar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    background-color: aquamarine;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+}
