@@ -10,3 +10,8 @@
 h1 {
     text-align: center;
 }
+
+.ContainerTeam{
+    background-color: aqua;
+    padding-top: 100px;
+}

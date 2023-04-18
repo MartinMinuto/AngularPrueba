@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-player',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./player.component.css']
 })
 export class PlayerComponent {
+
+  @Input()
+  playerName = 'Marcelo'
+  teamName = 'March'
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+
+  }
 
 }

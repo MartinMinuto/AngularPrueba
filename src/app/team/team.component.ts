@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-team',
@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class TeamComponent {
 
+  @Input('team')
+  name: string = 'City';
+  status: boolean = true;
+  player: string = ''
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+    this.name = 'New City'
+  }
+
+  agregarJugador(){
+    this.player = 'Marcelo'
+  }
 }
