@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-player',
@@ -11,12 +11,19 @@ export class PlayerComponent {
   playerName = 'Marcelo'
   teamName = 'March'
 
+  @Output('Activate')
+  status: EventEmitter<boolean> = new EventEmitter<boolean>()
+
   constructor() {
 
   }
 
   ngOnInit() {
 
+  }
+
+  activarPlayer(){
+    this.status.emit(true)
   }
 
 }

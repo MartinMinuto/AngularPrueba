@@ -9,7 +9,7 @@ export class TeamComponent {
 
   @Input('team')
   name: string = 'City';
-  status: boolean = true;
+  status: boolean = false;
   player: string = ''
 
   constructor() {
@@ -22,5 +22,9 @@ export class TeamComponent {
 
   agregarJugador(){
     this.player = 'Marcelo'
+  }
+
+  actulizarStatus(event: boolean) {
+    this.status = event; 
   }
 }
